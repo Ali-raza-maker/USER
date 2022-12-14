@@ -9,7 +9,7 @@ import { User, UserDocument } from './entity/user.model';
 export class UserService {
   constructor(
     @InjectModel(User.name)
-    private readonly userModel: Model<UserDocument>,
+    private userModel: Model<UserDocument>,
   ) {}
 
   async create(createEmployeeDto: CreateUserDto): Promise<UserDocument> {
