@@ -9,6 +9,7 @@ export class AppController {
 
   @Get()
   getHello(@Res() res: Response) {
-    res.status(HttpStatus.OK).json({ message: 'helo gandu.....' });
+    // res.status(HttpStatus.OK).json({ message: 'helo gandu.....' });
+    return this.appService.getHello();
   }
 }
